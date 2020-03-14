@@ -17,20 +17,19 @@ Db.prototype.connect = function (cb) {
     return ((() => {
         mongoose.connect(url, { useMongoClient: true }, function (err) {
 
-        if (err) {
-            self.common.log.error('[DB] ', err);
-            return cb(err);
-        }
+            if (err) {
+                self.common.log.error('[DB] ', err);
+                return cb(err);
+            }
 
-        self.common.log.info('[DB] Connected');
+            self.common.log.info('[DB] Connected');
 
-        return cb();
+            return cb();
 
-    });
+        });
         return mongoose.connection;
     })());
 
 };
 
 module.exports = Db;
-
