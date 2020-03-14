@@ -41,7 +41,7 @@
     "lodash": "^2.4.1",
     "lru-cache": "^4.0.1",
     "moment": "^2.19.3",
-    "mongoose": "^4.11.8",
+    "mongoose": "^5.0.0",
     "morgan": "^1.7.0",
     "request": "^2.83.0",
     "deocoincore-lib": "^0.0.3",
